@@ -8,46 +8,190 @@
   <link href="css/reset.css" type="text/css" rel="stylesheet"  />
   <link href="css/style.css" type="text/css" rel="stylesheet"  />
   <title>Easy-Prep for SAT</title>
+	<!-- Bootstrap -->
+	<link href="bootstrap-3.321.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	 <span class="navbar-toggler-icon"></span>
+ </button>
+ <a class="navbar-brand" href="#">Navbar</a>
+ <div class="collapse navbar-collapse" id="navbarText">
+	 <ul class="navbar-nav mr-auto">
+		 <li class="nav-item active">
+			 <a class="nav-link" href="#">Home</a>
+		 </li>
+		 <li class="nav-item">
+			 <a class="nav-link" href="#">Try</a>
+		 </li>
+		 <li class="nav-item">
+			 <a class="nav-link" href="#">Buy</a>
+		 </li>
+	 </ul>
+ </div>
+</nav>
 </head>
+
 <body>
 <header>
+
+<div class="container">
+	<div id="carousel-example-generic" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+
+        <!-- First slide -->
+        <div class="item active deepskyblue">
+
+          <div class="carousel-caption">
+            <h3 data-animation="animated bounceInLeft">
+              Word
+            </h3>
+            <h3 data-animation="animated bounceInRight">
+              Word
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated zoomInUp">Button</button>
+          </div>
+        </div> <!-- /.item -->
+
+        <!-- Second slide -->
+        <div class="item skyblue">
+          <div class="carousel-caption">
+            <h3 class="icon-container" data-animation="animated bounceInDown">
+              <span class="glyphicon glyphicon-heart"></span>
+            </h3>
+            <h3 data-animation="animated bounceInUp">
+              Definition
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated zoomInRight">Button</button>
+          </div>
+        </div><!-- /.item -->
+
+        <!-- Third slide -->
+        <div class="item darkerskyblue">
+          <div class="carousel-caption">
+            <h3 class="icon-container" data-animation="animated zoomInLeft">
+              <span class="glyphicon glyphicon-glass"></span>
+            </h3>
+            <h3 data-animation="animated flipInX">
+              Sentence
+            </h3>
+            <button class="btn btn-primary btn-lg" data-animation="animated lightSpeedIn">Button</button>
+          </div>
+        </div><!-- /.item -->
+
+      </div><!-- /.carousel-inner -->
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+</div><!-- /.container -->
+</div>
 </header>
+
 <main>
-  <div id="card-container">
-	  <div id="card">
-	    <p id="word"></p>
-	    <p id="phonetic"></p>
-      <p id="spoken"></p>
-		  <p id="def1"></p>
-	  	<p id="note1"></p>
-      <p id="def2"></p>
-      <p id="note2"></p>
-      <p id="def3"></p>
-      <p id="note3"></p>
-	    <p id="sentence"></p>
+	<article>
+		<div class="box left"></div>
+		<img class="testimg" src="russell crowe.jpg" alt="Russell Crowe">
+		<h2>Testimonial</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</article>
+
+	<article>
+		<div class="box middle"></div>
+		<img class="testimg" src="tyra banks.jpg" alt="Tyra Banks">
+		<h2>Testimonial</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</article>
+
+	<article>
+		<div class="box right"></div>
+		<img class="testimg" src="jlo.jpg" alt="Jennifer Lopez">
+		<h2>Testimonial</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</article>
+ </main>
+
+<main class="section2">
+  <article>
+    <div class="box left"></div>
+    <h2 class="salestext">Sales Item</h2>
+    <p class="salestext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div>
+      <button class="submit">Buy</button>
     </div>
-  </div>
-  <div id="button-container">
-    <div class="buttons" id="question">
-      <button class="button" id="skip">SKIP</button>
-      <button class="button" id="show">SHOW</button>
-      <button class="button" id="hint">HINT</button>
+  </article>
+
+  <article>
+    <div class="box middle"></div>
+    <h2 class="salestext">Sales Item</h2>
+    <p class="salestext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div>
+      <button class="submit">Buy</button>
     </div>
-    <div class="buttons" id="answer">
-      <button class="button" id="known">KNOW IT</button>
-      <button class="button" id="learned">LEARNED IT</button>
-      <button class="button" id="not-yet">NOT YET</button>
+  </article>
+
+  <article>
+    <div class="box right"></div>
+    <h2 class="salestext">Sales Item</h2>
+    <p class="salestext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div>
+      <button class="submit">Buy</button>
     </div>
-  </div>
-  <div id="status-container">
-    <p class="status" id="learned-status"></p>
-    <p class="status" id="not-yet-status"></p>
-    <p class="status" id="known-status"></p>
-    <p class="status" id="total-status"></p>
-  </div>
-</main>
-<footer>
-</footer>
+  </article>
+ </main>
+
+ <div id="card-container">
+   <div id="card">
+     <p id="word"></p>
+     <p id="phonetic"></p>
+     <p id="spoken"></p>
+     <p id="def1"></p>
+     <p id="note1"></p>
+     <p id="def2"></p>
+     <p id="note2"></p>
+     <p id="def3"></p>
+     <p id="note3"></p>
+     <p id="sentence"></p>
+   </div>
+ </div>
+ <div id="button-container">
+   <div class="buttons" id="question">
+     <button class="button" id="skip">SKIP</button>
+     <button class="button" id="show">SHOW</button>
+     <button class="button" id="hint">HINT</button>
+   </div>
+   <div class="buttons" id="answer">
+     <button class="button" id="known">KNOW IT</button>
+     <button class="button" id="learned">LEARNED IT</button>
+     <button class="button" id="not-yet">NOT YET</button>
+   </div>
+ </div>
+ <div id="status-container">
+   <p class="status" id="learned-status"></p>
+   <p class="status" id="not-yet-status"></p>
+   <p class="status" id="known-status"></p>
+   <p class="status" id="total-status"></p>
+ </div>
+
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
