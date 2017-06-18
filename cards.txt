@@ -1,0 +1,250 @@
+1
+censure
+SEN shur
+n.  An expression of strong disapproval
+null
+v.  To find fault with
+null
+null
+null
+Richardson was able to keep his job after the scandal but earned a censure that remained on his permanent record.
+2
+chimera
+kie MERE uh
+n.  An imaginary monster
+null
+n.  A foolish idea
+null
+null
+null
+Dana's brother plans to get rich quick by raising emus for their meat, selling Martian real estate, and other such chimeras.
+3
+idiosyncrasy
+id ee owe SING kruh see
+n.  An odd behavior
+null
+null
+null
+null
+null
+This psychologist believes that any idiosyncrasy is all right as long as the person practicing the strange habit doesn't mind it and it doesn't harm anyone.
+4
+morose
+muh ROCE
+a.  Gloomy; unsociable
+null
+null
+null
+null
+null
+Grandpa Jones was morose even before his dog died; after that, he was positively antisocial.
+5
+quibble
+KWIB ul
+v.  To find fault over trivial objections
+null
+n.  A petty objection or criticism
+null
+null
+null
+Janie won't go to garage sales anymore, because she doesn't like to quibble over prices in the driveways of strangers.
+6
+utility
+you TILL i tee
+n.  Usefulness
+null
+n.  Something useful
+null
+n.  A public service
+(ex:  transportation)
+The secretary was retained because of her adaptability and utility.
+7
+couch
+COUCH
+v.  To express
+(esp.  using words of a certain kind)
+null
+null
+null
+null
+Len couched his request for raise in terms he hoped would make him appear deserving, but not needy.
+8
+eddy
+ED ee
+n.  Swirling water or air
+null
+null
+null
+null
+null
+The rafters could tell from the swirling eddies in the stream that turbulent water lay ahead.
+9
+incremental
+in kruh MEN tul
+a.  Pertaining to a small change
+null
+null
+null
+null
+null
+The incremental budget increase was inadequate to meet increased demands.
+10
+objective
+ub JECK tiv
+a.  Pertaining to something real and observable
+null
+a.  Uninfluenced by emotion or bias
+null
+n.  A goal
+(something striven for)
+However we might feel about leaving the house, an objective look at our finances confirms that we can no longer afford it.
+11
+qualm
+KWOM
+n.  A misgiving
+(about the correctness of an action)
+n.  A sudden feeling of sickness or faintness
+null
+null
+null
+Marla had some qualms about giving the promotion to Henry, but felt she should give him a chance to prove his worth.
+12
+tenet
+TEN it
+n.  A belief held as true
+null
+null
+null
+null
+null
+Freedom of speech is one of the most widely-cherished tenets of American democracy.
+13
+auspice
+AW spice
+n.  Protection or support
+(often 'auspices')
+n.  An omen or forecast
+(esp. based on the actions of birds)
+null
+null
+Many species of endangered animals have flourished under the auspices of organizations like Greenpeace and the National Wildlife Foundation.
+14
+forte
+FOR tay
+n.  A person's strong point
+null
+null
+null
+null
+null
+Stuart's forte was drawing connections between the various bits of information he had picked up here and there.
+15
+meal
+MEAL
+n.  Ground grain
+null
+null
+null
+null
+null
+During our tour of the mill we saw the various machines the grain must go through to be ground into meal.
+16
+yahoo
+YA who
+n.  A brutish, coarse person
+null
+null
+null
+null
+null
+Everything was fine until that yahoo jumped up and said we should take the law into our own hands.
+17
+vamoose
+va MOOSE
+v.  To go away quickly
+null
+null
+null
+null
+null
+We agreed to vamoose at the first sign of trouble.
+18
+quotidian
+kwoe TID ee un
+a.  Common or ordinary
+null
+a.  Reappearing daily
+null
+null
+null
+It was a big deal for me to see the Rocky Mountains, but to Shelby, who lives in Denver, it is quite quotidian.
+19
+fountainhead
+FOUN tun head
+n.  A spring that is the start of a stream
+null
+n.  A source or origin
+null
+null
+null
+This influential preacher's writings were a fountainhead for the later movement against slavery.
+20
+antigen
+AN ti jin
+n.  Something that triggers the production of antibodies
+null
+null
+null
+null
+null
+The doctor has assured Carla that, if she takes regular injections of the antigen, she will develop complete immunity to the pollens that cause her allergies.
+21
+sagacious
+suh GAY shus
+a.  Wise
+null
+a.  Shrewd
+(keenly perceptive)
+null
+null
+The travel guide suggested that it might be sagacious of prospective campers to call ahead for weather conditions.
+22
+perfidy
+PER fi de
+n.  Treachery
+(breech of trust)
+null
+null
+null
+null
+Those of us who are more trusting find it especially hard to accept the perfidy of loved ones.
+23
+inchoate
+in KOE it
+a.  Undeveloped
+null
+a.  Unorganized
+null
+null
+null
+At this point our plans for the housing development are still inchoate.
+24
+fatuous
+FACH ooh us
+a.  Foolish
+null
+null
+null
+null
+null
+The visitor from New Zealand was asked a number of fatuous questions about where his homeland was located, including whether it was part of Canada.
+25
+verboten
+fer BOT un
+a.  Forbidden
+(esp.  by law)
+null
+null
+null
+null
+A sign near the swimming pool announces that running is completely verboten.
