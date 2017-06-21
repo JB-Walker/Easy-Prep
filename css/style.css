@@ -4,9 +4,56 @@
   padding: 0px;
 }
 
-#card-display {
-  width:80vw;
-  height: calc(80vw * 0.67);
-  border: 2px solid black;
 
+#card-container[data-display="yes"] {
+  display: block;
+}
+
+#card-container[data-display="no"] {
+  display: none;
+}
+
+
+#question[data-display="yes"] {
+  display: block;
+}
+
+#question[data-display="no"] {
+  display: none;
+}
+
+
+#answer[data-display="yes"] {
+  display: block;
+}
+
+#answer[data-display="no"] {
+  display: none;
+}
+
+
+#knew[data-display="yes"] {
+  display: block;
+}
+
+#knew[data-display="no"] {
+  display: none;
+}
+
+
+#learned[data-display="yes"] {
+  display: block;
+}
+
+#learned[data-display="no"] {
+  display: none;
+}
+
+
+#completed-deck[data-display="yes"] {
+  display: block;
+}
+
+#completed-deck[data-display="no"] {
+  display: none;
 }

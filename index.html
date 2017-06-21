@@ -11,11 +11,10 @@
 </head>
 <body>
 <main>
-  <div id="card-container">
+  <div id="card-container" data-side="word" data-display="yes">
 	  <div id="card">
 	    <p id="word"></p>
 	    <p id="phonetic"></p>
-      <p id="spoken"></p>
 		  <p id="def1"></p>
 	  	<p id="note1"></p>
       <p id="def2"></p>
@@ -26,14 +25,14 @@
     </div>
   </div>
   <div id="button-container">
-    <div class="buttons" id="question">
-      <button class="button" id="skip" onclick="Skip()">SKIP</button>
+    <div class="buttons" id="question" data-display="yes">
+      <button class="button" id="skip">SKIP</button>
       <button class="button" id="show">SHOW</button>
       <button class="button" id="hint">HINT</button>
     </div>
-    <div class="buttons" id="answer">
-      <button class="button" id="known">KNOW IT</button>
-      <button class="button" id="learned">LEARNED IT</button>
+    <div class="buttons" id="answer" data-display="no">
+      <button class="button" id="knew" data-display="yes">KNEW IT</button>
+      <button class="button" id="learned" data-display="no">LEARNED IT</button>
       <button class="button" id="not-yet">NOT YET</button>
     </div>
   </div>
@@ -43,13 +42,12 @@
     <p class="status" id="known-status"></p>
     <p class="status" id="total-status"></p>
   </div>
+  <div id="completed-deck" data-display="no">
+    <p>completed all cards, wanna buy more blah blah....</p>
+  </div>
 </main>
-<footer>
-</footer>
 </body>
-<!--
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
--->
 <script type="text/javascript" src="js/script.js"></script>
 </html>
