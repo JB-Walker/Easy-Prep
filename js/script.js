@@ -36,11 +36,11 @@ var wordsLearned = 0;
 var wordsKnown = 0;
 var learned = [];
 var knew = [];
-var defShown = [];
+var notYet = [];
 for (i=0; i<totalWords; i++) {
   learned[i] = false;
   knew[i] = false;
-  defShown[i] = 0;
+  notYet[i] = 0;
 }
 ShowNextWord();
 UpdateStatus();
@@ -55,9 +55,7 @@ function ShowCurrentHint() {
 function ShowCurrentDef() {
   cardSide = "def";
   document.getElementById("card-container").setAttribute("data-side", cardSide);
-  console.log(cardData[currentCard][0]+" def shown "+defShown[currentCard]+" times");
-  defShown[currentCard]++;
-  console.log(cardData[currentCard][0]+" def shown "+defShown[currentCard]+" times");
+  console.log(cardData[currentCard][0]+" def shown "+notYet[currentCard]+" times");
   for (i=1; i<id.length; i++) {
     if (cardData[currentCard][i] !== null) {
       document.getElementById(id[i]).innerHTML = cardData[currentCard][i];
@@ -98,15 +96,15 @@ function CompletedDeck() {
 }
 
 function UpdateStatus() {
-  var notYet = 0;
+  var notYetSum = 0;
   for (var i=0; i<totalWords; i++) {
-    if ((learned[i] == false) && (knew[i] == false) && (defShown[i] > 0)) {
-      notYet++;
+    if ((learned[i] == false) && (knew[i] == false) && (notYet[i] > 0)) {
+      notYetSum++;
     }
   }
-  var totalWords = wordsLearned + notYet + wordsKnown;
+  var totalWords = wordsLearned + notYetSum + wordsKnown;
   document.getElementById("learned-status").innerHTML = "Words Learned: " + wordsLearned;
-  document.getElementById("not-yet-status").innerHTML = "Words Studying: " + notYet;
+  document.getElementById("not-yet-status").innerHTML = "Words Studying: " + notYetSum;
   document.getElementById("known-status").innerHTML =   "Words Known: " + wordsKnown;
   document.getElementById("total-status").innerHTML =   "Total Words: " + totalWords;
 }
@@ -123,12 +121,12 @@ $("#show").click(function() {
     document.getElementById("question").setAttribute("data-display", "no");
     document.getElementById("answer").setAttribute("data-display", "yes");
     // Button 'Knew It' only appears at first show; thereafter 'Learned It' appears
-    if (defShown[currentCard] = 1) {
-      document.getElementById("knew").setAttribute("data-display", "yes");
-      document.getElementById("learned").setAttribute("data-display", "no");
-    } else {
+    if (notYet[currentCard] > 0) {
       document.getElementById("knew").setAttribute("data-display", "no");
       document.getElementById("learned").setAttribute("data-display", "yes");
+    } else {
+      document.getElementById("knew").setAttribute("data-display", "yes");
+      document.getElementById("learned").setAttribute("data-display", "no");
     }
     ShowCurrentDef();
     UpdateStatus();
@@ -174,6 +172,7 @@ $("#learned").click(function() {
 
 $("#not-yet").click(function() {
   if (cardSide == "def") {
+      notYet[currentCard]++;
       ShowNextWord();
       // Toggle button panel display
       document.getElementById("question").setAttribute("data-display", "yes");
