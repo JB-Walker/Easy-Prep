@@ -49,6 +49,8 @@ function ShowCurrentHint() {
   cardSide = "hint";
   document.getElementById("card-container").setAttribute("data-side", cardSide);
   document.getElementById("sentence").innerHTML = cardData[currentCard][8];
+  document.getElementById("sentence").removeAttribute("class");
+  document.getElementById("sentence").setAttribute("class", "black");
   console.log("hint : "+ cardData[currentCard][8]);
 }
 
@@ -59,9 +61,13 @@ function ShowCurrentDef() {
   for (i=1; i<id.length; i++) {
     if (cardData[currentCard][i] !== null) {
       document.getElementById(id[i]).innerHTML = cardData[currentCard][i];
+      document.getElementById(id[i]).removeAttribute("class");
+      document.getElementById(id[i]).setAttribute("class", "black");
       console.log(id[i] +" : "+ cardData[currentCard][i]);
     } else {
-      document.getElementById(id[i]).innerHTML = "";
+      document.getElementById(id[i]).innerHTML = ".";
+      document.getElementById(id[i]).removeAttribute("class");
+      document.getElementById(id[i]).setAttribute("class", "white");
 }}}
 
 function ShowNextWord() {
@@ -82,9 +88,13 @@ function ShowNextWord() {
   } else {currentCard = 0;}
   // Erase old Def data and display new word
   for (i=0; i<id.length; i++) {
-    document.getElementById(id[i]).innerHTML = "";
+    document.getElementById(id[i]).innerHTML = ".";
+    document.getElementById(id[i]).removeAttribute("class");
+    document.getElementById(id[i]).setAttribute("class", "white");
   }
-  document.getElementById(id[0]).innerHTML = cardData[currentCard][0];
+  document.getElementById("word").innerHTML = cardData[currentCard][0];
+  document.getElementById("word").removeAttribute("class");
+  document.getElementById("word").setAttribute("class", "black");
   console.log("word : "+cardData[currentCard][0]);
 }
 
