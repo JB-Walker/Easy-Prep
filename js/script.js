@@ -100,7 +100,7 @@ function CompletedDeck() {
 function UpdateStatus() {
   var notYet = 0;
   for (var i=0; i<totalWords; i++) {
-    if (learned[i] == false && knew[i] == false && defShown[i] > 0) {
+    if ((learned[i] == false) && (knew[i] == false) && (defShown[i] > 0)) {
       notYet++;
     }
   }
@@ -119,7 +119,6 @@ $("#skip").click(function() {
 
 $("#show").click(function() {
   if (cardSide !== "def") {
-    ShowCurrentDef();
     // Toggle button panel display
     document.getElementById("question").setAttribute("data-display", "no");
     document.getElementById("answer").setAttribute("data-display", "yes");
@@ -131,9 +130,9 @@ $("#show").click(function() {
       document.getElementById("knew").setAttribute("data-display", "no");
       document.getElementById("learned").setAttribute("data-display", "yes");
     }
-  }
-  UpdateStatus();
-});
+    ShowCurrentDef();
+    UpdateStatus();
+}});
 
 $("#hint").click(function() {
   if (cardSide == "word") {
@@ -176,6 +175,9 @@ $("#learned").click(function() {
 $("#not-yet").click(function() {
   if (cardSide == "def") {
       ShowNextWord();
+      // Toggle button panel display
+      document.getElementById("question").setAttribute("data-display", "yes");
+      document.getElementById("answer").setAttribute("data-display", "no");
       UpdateStatus();
 }});
 
