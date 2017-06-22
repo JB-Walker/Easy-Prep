@@ -47,15 +47,14 @@ UpdateStatus();
 
 function ShowCurrentHint() {
   cardSide = "hint";
-  document.getElementById("card-container").setAttribute = ("data-side", cardSide);
+  document.getElementById("card-container").setAttribute("data-side", cardSide);
   document.getElementById("sentence").innerHTML = cardData[currentCard][8];
   console.log("hint : "+ cardData[currentCard][8]);
-
 }
 
 function ShowCurrentDef() {
   cardSide = "def";
-  document.getElementById("card-container").setAttribute = ("data-side", cardSide);
+  document.getElementById("card-container").setAttribute("data-side", cardSide);
   console.log(cardData[currentCard][0]+" def shown "+defShown[currentCard]+" times");
   defShown[currentCard]++;
   console.log(cardData[currentCard][0]+" def shown "+defShown[currentCard]+" times");
@@ -69,7 +68,7 @@ function ShowCurrentDef() {
 
 function ShowNextWord() {
   cardSide = "word";
-  document.getElementById("card-container").setAttribute = ("data-side", cardSide);
+  document.getElementById("card-container").setAttribute("data-side", cardSide);
   // Determine Next Word
   if (remainingWords > 0) {
     var foundNextWord = false;
@@ -92,10 +91,10 @@ function ShowNextWord() {
 }
 
 function CompletedDeck() {
-  document.getElementById("card-container").setAttribute = ("data-display", "no");
-  document.getElementById("question").setAttribute = ("data-display", "no");
-  document.getElementById("answer").setAttribute = ("data-display", "no");
-  document.getElementById("completed-deck").setAttribute = ("data-display", "yes");
+  document.getElementById("card-container").setAttribute("data-display", "no");
+  document.getElementById("question").setAttribute("data-display", "no");
+  document.getElementById("answer").setAttribute("data-display", "no");
+  document.getElementById("completed-deck").setAttribute("data-display", "yes");
 }
 
 function UpdateStatus() {
@@ -122,17 +121,18 @@ $("#show").click(function() {
   if (cardSide !== "def") {
     ShowCurrentDef();
     // Toggle button panel display
-    document.getElementById("question").setAttribute = ("data-display", "no");
-    document.getElementById("answer").setAttribute = ("data-display", "yes");
+    document.getElementById("question").setAttribute("data-display", "no");
+    document.getElementById("answer").setAttribute("data-display", "yes");
     // Button 'Knew It' only appears at first show; thereafter 'Learned It' appears
-    if (defShown[currentCard] = 0) {
-      document.getElementById("knew").setAttribute = ("data-display", "yes");
-      document.getElementById("learned").setAttribute = ("data-display", "no");
+    if (defShown[currentCard] = 1) {
+      document.getElementById("knew").setAttribute("data-display", "yes");
+      document.getElementById("learned").setAttribute("data-display", "no");
     } else {
-      document.getElementById("knew").setAttribute = ("data-display", "no");
-      document.getElementById("learned").setAttribute = ("data-display", "yes");
+      document.getElementById("knew").setAttribute("data-display", "no");
+      document.getElementById("learned").setAttribute("data-display", "yes");
     }
   }
+  UpdateStatus();
 });
 
 $("#hint").click(function() {
@@ -146,28 +146,32 @@ $("#knew").click(function() {
     knew[currentCard] = true;
     wordsKnown++;
     remainingWords--;
-    UpdateStatus();
     if (remainingWords == 0) {
       CompletedDeck();
     } else {
       ShowNextWord();
     }
-  }
-});
+    // Toggle button panel display
+    document.getElementById("question").setAttribute("data-display", "yes");
+    document.getElementById("answer").setAttribute("data-display", "no");
+    UpdateStatus();
+}});
 
 $("#learned").click(function() {
   if (cardSide == "def") {
     learned[currentCard] = true;
     wordsLearned++;
     remainingWords--;
-    UpdateStatus();
     if (remainingWords == 0) {
       CompletedDeck();
     } else {
       ShowNextWord();
     }
-  }
-});
+    // Toggle button panel display
+    document.getElementById("question").setAttribute("data-display", "yes");
+    document.getElementById("answer").setAttribute("data-display", "no");
+    UpdateStatus();
+}});
 
 $("#not-yet").click(function() {
   if (cardSide == "def") {
