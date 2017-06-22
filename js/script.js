@@ -157,10 +157,10 @@ $("#knew").click(function() {
       CompletedDeck();
     } else {
       ShowNextWord();
+      // Toggle button panel display
+      document.getElementById("question").setAttribute("data-display", "yes");
+      document.getElementById("answer").setAttribute("data-display", "no");
     }
-    // Toggle button panel display
-    document.getElementById("question").setAttribute("data-display", "yes");
-    document.getElementById("answer").setAttribute("data-display", "no");
     UpdateStatus();
 }});
 
@@ -173,10 +173,10 @@ $("#learned").click(function() {
       CompletedDeck();
     } else {
       ShowNextWord();
+      // Toggle button panel display
+      document.getElementById("question").setAttribute("data-display", "yes");
+      document.getElementById("answer").setAttribute("data-display", "no");
     }
-    // Toggle button panel display
-    document.getElementById("question").setAttribute("data-display", "yes");
-    document.getElementById("answer").setAttribute("data-display", "no");
     UpdateStatus();
 }});
 
@@ -189,7 +189,5 @@ $("#not-yet").click(function() {
       document.getElementById("answer").setAttribute("data-display", "no");
       UpdateStatus();
 }});
-
-
 
 });
