@@ -112,11 +112,11 @@ function UpdateStatus() {
       notYetSum++;
     }
   }
-  var totalWords = wordsLearned + notYetSum + wordsKnown;
+  var currentWords = wordsLearned + notYetSum + wordsKnown;
   document.getElementById("learned-status").innerHTML = "Words Learned: " + wordsLearned;
   document.getElementById("not-yet-status").innerHTML = "Words Studying: " + notYetSum;
   document.getElementById("known-status").innerHTML =   "Words Known: " + wordsKnown;
-  document.getElementById("total-status").innerHTML =   "Total Words: " + totalWords;
+  document.getElementById("total-status").innerHTML =   "Total Words: " + currentWords;
 }
 
 $("#skip").click(function() {
